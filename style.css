@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+#character{
+    width: 20px;
+    height: 50px;
+   /* background-color: red;*/
+    position: relative;
+    top: 150px;
+    background-image: url("slika.png");
+    background-size: 20px 50px;
+}
+.animate{   /*da skace samo kad pozovemo*/
+    animation:  jump 500ms;
+}
+
+@keyframes jump{ /*postepeno da bolje izgleda animacija*/
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 130px; /*bit ce u pocetku smjesten ispod crvenog koji je gore u kutu pa je zato 130 jer mu je pocetna 50, a on je 20 visok*/
+    left: 480px;
+    animation: block 1s infinite;
+}
+@keyframes block{
+    0%{left: 480px;}
+    100%{left: -40px;}
+}
