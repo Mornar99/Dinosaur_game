@@ -29,7 +29,7 @@
 #block{
     width: 20px;
     height: 20px;
-    background-color: blue;
+    background-color: grey;
     position: relative;
     top: 130px; /*bit ce u pocetku smjesten ispod crvenog koji je gore u kutu pa je zato 130 jer mu je pocetna 50, a on je 20 visok*/
     left: 480px;
